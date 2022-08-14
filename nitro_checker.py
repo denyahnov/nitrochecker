@@ -84,9 +84,9 @@ def main():
 	print('[+] Reading Tokens File')
 
 	try:
-		tokens = read_tokens("tokens.txt")
+		tokens = read_tokens(os.getcwd() + '\\' + "tokens.txt")
 	except FileNotFoundError:
-		open("tokens.txt","w+")
+		open(os.getcwd() + '\\' + "tokens.txt","w+")
 
 	final_tokens = []
 
